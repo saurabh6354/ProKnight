@@ -1,0 +1,4 @@
+#Tue Sep 28 22:18:56 IST 2021
+base.0=C\:\\Users\\Saurabh\\AndroidStudioProjects\\Chess_Game-main\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
