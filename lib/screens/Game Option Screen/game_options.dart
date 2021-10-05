@@ -27,6 +27,7 @@ class GameOptionScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            SizedBox(height: 40,),
             GestureDetector(
               child: Container(
                 padding: EdgeInsets.only(top: 0.0),
@@ -54,7 +55,7 @@ class GameOptionScreen extends StatelessWidget {
           //  Image.asset(imageAsset + "LOGO.png"),
             // add gesture detection to all the google
             // facebook, twitter and apple buttons,
-            SizedBox(height: ScreenSize().height(context) * 0.3),
+            SizedBox(height: ScreenSize().height(context) * 0.245),
 
             SizedBox(
               height: ScreenSize().height(context) * 0.08,
@@ -77,7 +78,7 @@ class GameOptionScreen extends StatelessWidget {
               height: ScreenSize().height(context) * 0.02,
             ),
             Image.asset(imageAsset + "dc.png"),
-              SizedBox(height: ScreenSize().height(context)*0.05,),
+              SizedBox(height: ScreenSize().height(context)*0.1,),
             GestureDetector(
               child: Container(
                 padding: EdgeInsets.only(top: 0.0),

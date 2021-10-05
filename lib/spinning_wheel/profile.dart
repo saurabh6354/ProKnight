@@ -24,7 +24,7 @@ class ProfileApp extends StatelessWidget {
     decoration: BoxDecoration(
     image: DecorationImage(
     image: AssetImage(
-    'assets/images/img1.png'),
+    'assets/images/Profile main bg.png'),
     fit: BoxFit.fill,
     ),
     gradient: LinearGradient(
@@ -39,18 +39,18 @@ class ProfileApp extends StatelessWidget {
     crossAxisAlignment: CrossAxisAlignment.start,
 
     children : <Widget>[
-      SizedBox(height:40,),
+      SizedBox(height: MediaQuery.of(context).size.height*0.02,),
     new Container(),Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: <Widget>[
-      SizedBox(width: 10,),
+      SizedBox(width: MediaQuery.of(context).size.width*0.05,),
     CircleAvatar(
     backgroundImage: NetworkImage(
       "https://cdn.icon-icons.com/icons2/2468/PNG/512/user_kids_avatar_user_profile_icon_149314.png",
     ),
       radius: 75.0,
     ),
-     SizedBox(width:50 ),
+     SizedBox(width: MediaQuery.of(context).size.width*0.1 ),
     Padding(
     padding: const EdgeInsets.all(8.0),
     child: SizedBox(
@@ -64,10 +64,10 @@ class ProfileApp extends StatelessWidget {
     icon: Icon(Icons.edit),
     label: Text("Edit"))),
     ),],),
-
+    SizedBox(height: MediaQuery.of(context).size.height*0.1,),
     new Container(
     child: Padding(
-    padding: const EdgeInsets.symmetric(vertical: 30.0,horizontal: 20.0),
+    padding: const EdgeInsets.symmetric(vertical: 0.0,horizontal: 20.0),
     child: Column(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
@@ -87,7 +87,7 @@ class ProfileApp extends StatelessWidget {
       Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: 'User ID :                             ' ,
+            TextSpan(text: 'User ID :                                ' ,
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 24),),
             TextSpan(
               text: '   12345',
@@ -100,7 +100,7 @@ class ProfileApp extends StatelessWidget {
       Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: 'Name :                                   ' ,
+            TextSpan(text: 'Name :                                      ' ,
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white,fontSize: 24),),
             TextSpan(
               text: 'name',
@@ -113,7 +113,7 @@ class ProfileApp extends StatelessWidget {
       Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: 'Email id :                  ' ,
+            TextSpan(text: 'Email id :                     ' ,
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white,fontSize: 24),),
             TextSpan(
               text: 'sk@gmail.com',
@@ -125,7 +125,7 @@ class ProfileApp extends StatelessWidget {
       Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: 'Mobile No :                    ' ,
+            TextSpan(text: 'Mobile No :                       ' ,
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white,fontSize: 24),),
             TextSpan(
               text: '790xxxxxx',
@@ -165,7 +165,7 @@ class ProfileApp extends StatelessWidget {
       Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: 'Coin Balance :                    ' ,
+            TextSpan(text: 'Coin Balance :                       ' ,
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 24),),
             TextSpan(
               text: ' 12345',
@@ -178,7 +178,7 @@ class ProfileApp extends StatelessWidget {
       Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: 'Score:                                  ' ,
+            TextSpan(text: 'Score:                                     ' ,
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white,fontSize: 24),),
             TextSpan(
               text: ' 28.5K',
@@ -191,7 +191,7 @@ class ProfileApp extends StatelessWidget {
       Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: 'Ranking :                                ' ,
+            TextSpan(text: 'Ranking :                                   ' ,
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white,fontSize: 24),),
             TextSpan(
               text: '123',
@@ -218,8 +218,8 @@ class ProfileApp extends StatelessWidget {
     ),
     ),
     SizedBox(
-    height: 2.0,
-    ),
+    height: MediaQuery.of(context).size.height*0.05,),
+
       new Container(
         margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 5.0),
         child: new RaisedButton(

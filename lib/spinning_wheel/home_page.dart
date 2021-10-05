@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                 SpinningWheel(
                   Image.asset('assets/images/wheel-6-300.png'),
                   width: MediaQuery.of(context).size.width*0.731,
-                  height: MediaQuery.of(context).size.height*0.395,
+                  height: MediaQuery.of(context).size.height*0.365,
                   initialSpinAngle: _generateRandomAngle(),
                   spinResistance: 0.6,
                   canInteractWhileSpinning: false,
@@ -74,6 +74,7 @@ class _HomePageState extends State<HomePage> {
                   secondaryImageHeight: MediaQuery.of(context).size.height*0.2,
                   secondaryImageWidth: MediaQuery.of(context).size.width*0.2,
                   shouldStartOrStop: _wheelNotifier.stream,
+
                 ),
                /* GestureDetector(
                   onTap: (){
@@ -151,7 +152,7 @@ class _HomePageState extends State<HomePage> {
 
                     //Floating action button made transparent to use secondary image as a button
 
-                 new Align(alignment: Alignment(0.0,-0.60),        //fab button positioning center(0,0) above -ve below +ve
+                 new Align(alignment: Alignment(0.0,-0.63),        //fab button positioning center(0,0) above -ve below +ve
                    child: FloatingActionButton(elevation: 0,
 
                     // child:  new Icon(Icons.,color: Colors.white,),

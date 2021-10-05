@@ -35,7 +35,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox( height: ScreenSize().height(context) * 0.3,),
             new Container(
               height: ScreenSize().height(context)*0.08,
-              width: ScreenSize().width(context)*0.80,
+              width: ScreenSize().width(context)*0.76,
               //margin: EdgeInsets.fromLTRB(38.0, 90.0, 38.0, 0.0),
               child: new RaisedButton(
                   shape: new RoundedRectangleBorder(
@@ -54,6 +54,7 @@ class LoginScreen extends StatelessWidget {
                       new Image.asset(
                         'assets/images/login logo.png',
                         height: ScreenSize().height(context)*0.03,
+
                       ),
 
                       new Container(
